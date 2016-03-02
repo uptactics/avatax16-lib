@@ -49,7 +49,7 @@ class ResolveSingleAddressResponse extends Part
      *
      * @var array
      */
-    protected $errors;
+    protected $errors = array();
 
     /**
      * Types of complex properties

@@ -43,7 +43,7 @@ class ListResponse extends Part
      *
      * @var array
      */
-    protected $errors;
+    protected $errors = array();
 
     /**
      * List items

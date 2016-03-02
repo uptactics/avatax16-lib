@@ -41,5 +41,5 @@ class PingResponse extends Part
      *
      * @var array
      */
-    protected $errors;
+    protected $errors = array();
 }

@@ -43,7 +43,7 @@ class TransitionTransactionStateResponse extends Part
      *
      * @var array
      */
-    protected $errors;
+    protected $errors = array();
 
     /**
      * Http Status (code)
