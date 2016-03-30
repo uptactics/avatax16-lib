@@ -2,7 +2,7 @@
     "name": "onepica/avatax16",
     "description": "AvaTax16 PHP lib",
     "type": "library",
-    "version": "0.1.0",
+    "version": "0.1.0-stable",
     "license": [
         "OSL-3.0"
     ],
