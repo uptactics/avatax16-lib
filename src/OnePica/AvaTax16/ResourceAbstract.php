@@ -64,6 +64,7 @@ abstract class ResourceAbstract
         $curl->setHeader('Accept', $config->getAcceptHeader());
         $curl->setHeader('Content-Type', $config->getContentTypeHeader());
         $curl->setHeader('User-Agent', $config->getUserAgent());
+
         return $curl;
     }
 
@@ -71,7 +72,7 @@ abstract class ResourceAbstract
      * Set Error Data To Response If Exists
      *
      * @param \OnePica\AvaTax16\Document\Part $response
-     * @param Curl $curl
+     * @param Curl                            $curl
      * @return $this
      */
     protected function setErrorDataToResponseIfExists($response, $curl)
@@ -93,8 +94,6 @@ abstract class ResourceAbstract
                 if (isset($responseData->message)) {
                     $errors['message'] = $responseData->message;
                 }
-            } else {
-                $errors['message'] = $responseData;
             }
             $response->setErrors($errors);
         }
@@ -104,7 +103,7 @@ abstract class ResourceAbstract
      * Send Request To Service And Get Response Object
      *
      * @param string $url
-     * @param array $options
+     * @param array  $options
      * @return mixed $result
      */
     protected function sendRequest($url, $options = array())
@@ -133,6 +132,7 @@ abstract class ResourceAbstract
         } else {
             $result = $curl->getResponse();
         }
+
         return $result;
     }
 }
