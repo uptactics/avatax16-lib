@@ -87,7 +87,7 @@ class Response extends Part
      *
      * @var \OnePica\AvaTax16\Document\Response\Line[]
      */
-    protected $lines;
+    protected $lines = array();
 
     /**
      * Calculated Tax Summary
