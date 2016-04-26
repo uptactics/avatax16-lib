@@ -75,7 +75,7 @@ class CalculatedTaxSummary extends Part
      *
      * @var \OnePica\AvaTax16\Document\Response\CalculatedTaxSummary\TaxByType[]
      */
-    protected $taxByType;
+    protected $taxByType = [];
 
     /**
      * Tax
