@@ -176,7 +176,7 @@ class Part
             if (isset($this->propertyComplexTypes[$propName])) {
                 $propertyType = $this->propertyComplexTypes[$propName]['type'];
                 if (isset($this->propertyComplexTypes[$propName]['isArrayOf'])) {
-                    $items = null;
+                    $items = array();
                     if (count($value) > 0) {
                         foreach ($value as $itemKey => $itemData) {
                             $item = $this->createItemAndFillData($propertyType, $itemData);
