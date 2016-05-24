@@ -79,7 +79,7 @@ class CalculatedTaxSummary extends Part
      *
      * @var \OnePica\AvaTax16\Calculation\ListItemResponse\CalculatedTaxSummary\TaxByType
      */
-    protected $taxByType = [];
+    protected $taxByType = array();
 
     /**
      * Subtotal Taxable
