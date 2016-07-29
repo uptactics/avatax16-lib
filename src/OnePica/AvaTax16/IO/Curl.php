@@ -259,7 +259,7 @@ class Curl
         $this->id = 1;
         $this->setDefaultUserAgent();
         $this->setDefaultJsonDecoder();
-        $this->setDefaultTimeout();
+        //$this->setDefaultTimeout();
         $this->setOpt(CURLINFO_HEADER_OUT, true);
         $this->setOpt(CURLOPT_HEADERFUNCTION, array($this, 'headerCallback'));
         $this->setOpt(CURLOPT_RETURNTRANSFER, true);
